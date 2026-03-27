@@ -1,0 +1,46 @@
+# Next.js
+.next/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.eslintcache
+
+# Java / Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/resources/architecture_overview.md
+!**/src/main/resources/implementation_patterns.md
+!**/src/main/resources/unit_test_patterns.md
+!**/src/main/resources/ai_player_interface.md
+!**/src/main/resources/class_diagram.md
+!**/src/main/resources/random_player.md
+!**/src/main/resources/testing_strategies.md
+!**/src/main/resources/schema_design.md
+!**/src/main/resources/migration_guide.md
+!**/src/main/resources/button_styles.md
+!**/src/main/resources/layout_system.md
+!**/src/main/resources/module_structure.md
+!**/src/main/resources/core_functions.md
+!**/src/main/resources/state_management.md
+!**/src/main/resources/test_fixtures.md
+!**/src/main/resources/mocking_guide.**md
+!**/src/main/resources/schema.md
+!**/src/main/resources/queries.md
+!**/src/main/resources/components.md
+!**/src/main/resources/routing.md
+
+# IDEs
+.idea/
+*.iml
+*.iws
+.vscode/
+.DS_Store
+
+# Docker
+docker-compose.override.yml
+.env
+
+# Logs
+*.log
