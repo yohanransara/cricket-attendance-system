@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: cricket-attendance-backend
+    env: docker
+    rootDir: cricket-attendance-backend
+    plan: free
+    healthCheckPath: /api/auth/test # Optional, if you have a public health endpoint
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        sync: false
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
+      - key: SPRING_DATASOURCE_DRIVER_CLASS_NAME
+        value: org.postgresql.Driver
+      - key: SPRING_JPA_DATABASE_PLATFORM
+        value: org.hibernate.dialect.PostgreSQLDialect
