@@ -4,14 +4,14 @@ services:
     env: docker
     rootDir: cricket-attendance-backend
     plan: free
-    healthCheckPath: /api/auth/test # Optional, if you have a public health endpoint
+    healthCheckPath: /api/auth/test
     envVars:
       - key: SPRING_DATASOURCE_URL
-        sync: false
+        value: jdbc:postgresql://ep-winter-bonus-anj3me5p.c-6.us-east-1.aws.neon.tech/neondb?sslmode=require
       - key: SPRING_DATASOURCE_USERNAME
-        sync: false
+        value: neondb_owner
       - key: SPRING_DATASOURCE_PASSWORD
-        sync: false
+        value: npg_iE3FguOUCIN9
       - key: SPRING_DATASOURCE_DRIVER_CLASS_NAME
         value: org.postgresql.Driver
       - key: SPRING_JPA_DATABASE_PLATFORM
